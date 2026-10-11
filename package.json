@@ -1,0 +1,23 @@
+{
+  "name": "shopnest-app",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "pragya",
+    "service"
+  ],
+  "license": "ISC",
+  "author": "pragya",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "install" : "cd backend && npm install && cd ../frontend && npm install",
+    "dev:server": "cd backend && npm run dev",
+    "dev:client" : "cd frontend && npm run start",
+    "dev" : "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build" : "cd frontend && npm run build"
+  },
+  "dependencies": {
+    "concurrently": "^10.0.3"
+  }
+}
